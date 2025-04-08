@@ -11,20 +11,28 @@
 <body>
   <div class="container mt-4">
     <h1>TV Series</h1>
-    <table class="table table-striped">
-      <thead class="thead-dark">
-        <tr>
-          <th>#</th>
-          <th>Name</th>
-          <th>Channel</th>
-          <th>Seasons</th>
-        </tr>
-      </thead>
-      <tbody id="series-body">
-        <!-- Rows added by main.ts -->
-      </tbody>
-    </table>
+    <div class="row">
+      <!-- Columna de tabla -->
+      <div class="col-md-8">
+        <table class="table table-striped">
+          <thead class="thead-dark">
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Channel</th>
+              <th>Seasons</th>
+            </tr>
+          </thead>
+          <tbody id="series-body"></tbody>
+        </table>
+      </div>
+      <!-- Columna de tarjeta -->
+      <div class="col-md-4" id="serie-detail">
+        <!-- Aquí se insertará la Card -->
+      </div>
+    </div>
   </div>
+  
   <script type="module" src="./main.js"></script>
 </body>
 </html>
